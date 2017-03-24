@@ -13,7 +13,7 @@ class JarvisMusicController {
     static let playMusicCommands: [String] = ["play", "play music"]
     static let previousCommands: [String] = ["previous", "last", "last song", "back"]
     
-    static let allCommands: [String] = nextSongCommands + pauseCommands + playTopCommands + muteCommands + unMuteCommands + playMusicCommands + previousCommands
+    static let allCommands: [String] = nextSongCommands + pauseCommands + playTopCommands + muteCommands + unMuteCommands + playMusicCommands + previousCommands + ["light on", "light off"]
     
     func handleInput (command: String) {
         
@@ -45,6 +45,15 @@ class JarvisMusicController {
         
         if JarvisMusicController.previousCommands.contains(command) {
             self.previous()
+        }
+        
+        if (command == "light on") {
+            jarvisServices.api(url: "/light/1")
+        }
+        
+        
+        if (command == "light off") {
+            jarvisServices.api(url: "/light/0")
         }
         
         if !JarvisMusicController.allCommands.contains(command) {
