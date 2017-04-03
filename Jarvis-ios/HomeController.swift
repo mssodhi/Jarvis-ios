@@ -67,12 +67,16 @@ class HomeController: UIViewController, SFSpeechRecognizerDelegate {
         view.addSubview(speakButton)
         
         titleLabel.anchor(view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topConstant: 35, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: view.frame.width, heightConstant: 50)
-        
         infoLabel.anchor(titleLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topConstant: 15, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: view.frame.width, heightConstant: 30)
+        refreshButton.anchor(infoLabel.bottomAnchor, left: nil, bottom: nil, right: nil, topConstant: 15, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 105, heightConstant: 30)
+        speakButton.anchor(infoLabel.bottomAnchor, left: nil, bottom: nil, right: nil, topConstant: 50, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 105, heightConstant: 45)
         
-        refreshButton.anchor(infoLabel.bottomAnchor, left: infoLabel.leftAnchor, bottom: nil, right: infoLabel.rightAnchor, topConstant: 15, leftConstant: 125, bottomConstant: 0, rightConstant: 125, widthConstant: 105, heightConstant: 30)
+        let centerRefreshButton = NSLayoutConstraint(item: refreshButton, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
+        let centerSpeakButton = NSLayoutConstraint(item: speakButton, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self.view, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: 0)
         
-        speakButton.anchor(infoLabel.bottomAnchor, left: infoLabel.leftAnchor, bottom: nil, right: infoLabel.rightAnchor, topConstant: 50, leftConstant: 125, bottomConstant: 0, rightConstant: 125, widthConstant: 105, heightConstant: 45)
+        self.refreshButton.translatesAutoresizingMaskIntoConstraints = false
+        self.speakButton.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addConstraints([centerSpeakButton, centerRefreshButton])
         
         super.viewDidLoad()
         
@@ -155,7 +159,6 @@ class HomeController: UIViewController, SFSpeechRecognizerDelegate {
         
     }
     
-    // if Jarvis isn't running, hide the buttons, and show message
     func healthCheck() {
         JarvisServices.sharedInstance.statusCheck { (success, err) in
             if err != nil {
