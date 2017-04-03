@@ -84,11 +84,31 @@ class HomeController: UIViewController, SFSpeechRecognizerDelegate {
     
     func speakTapped() {
         if audioEngine.isRunning {
+            UIView.animate(withDuration: 0.4, animations: {
+                self.speakButton.transform = CGAffineTransform.identity.scaledBy(x: 1.3, y: 1.3)
+                self.speakButton.backgroundColor = .white
+                self.speakButton.setTitleColor(twitterBlue, for: .normal)
+            }, completion: { (finish) in
+                UIView.animate(withDuration: 0.6, animations: {
+                    self.speakButton.transform = CGAffineTransform.identity
+                })
+            })
+
             audioEngine.stop()
             recognitionRequest?.endAudio()
             audioEngine.inputNode?.removeTap(onBus: 0)
             speakButton.setTitle("Speak", for: .normal)
         } else {
+            UIView.animate(withDuration: 0.4, animations: {
+                self.speakButton.transform = CGAffineTransform.identity.scaledBy(x: 1.3, y: 1.3)
+                self.speakButton.backgroundColor = twitterBlue
+                self.speakButton.setTitleColor(.white, for: .normal)
+            }, completion: { (finish) in
+                UIView.animate(withDuration: 0.6, animations: {
+                    self.speakButton.transform = CGAffineTransform.identity
+                })
+            })
+            
             startRecording()
             speakButton.setTitle("Stop", for: .normal)
         }
