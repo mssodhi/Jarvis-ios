@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Bakery Jarvis
-//
-//  Created by Manu Sodhi on 12/21/16.
-//  Copyright © 2016 Manvinder Sodhi. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -20,7 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        window?.rootViewController = HomeController()
+        window?.rootViewController = ViewController()
+
         return true
     }
 
