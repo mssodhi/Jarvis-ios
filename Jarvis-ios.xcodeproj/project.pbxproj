@@ -10,36 +10,21 @@
 		729DCE0D1E37FBB000218A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCDFC1E37FBB000218A62 /* AppDelegate.swift */; };
 		729DCE0E1E37FBB000218A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729DCDFD1E37FBB000218A62 /* Assets.xcassets */; };
 		729DCE0F1E37FBB000218A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729DCDFE1E37FBB000218A62 /* LaunchScreen.storyboard */; };
-		729DCE101E37FBB000218A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729DCE001E37FBB000218A62 /* Main.storyboard */; };
-		729DCE111E37FBB000218A62 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCE021E37FBB000218A62 /* FirstViewController.swift */; };
-		729DCE121E37FBB000218A62 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 729DCE031E37FBB000218A62 /* Info.plist */; };
-		729DCE131E37FBB000218A62 /* JarvisBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCE041E37FBB000218A62 /* JarvisBrowserController.swift */; };
-		729DCE141E37FBB000218A62 /* JarvisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCE051E37FBB000218A62 /* JarvisController.swift */; };
-		729DCE151E37FBB000218A62 /* JarvisMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCE061E37FBB000218A62 /* JarvisMusicController.swift */; };
+		729DCE111E37FBB000218A62 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCE021E37FBB000218A62 /* HomeController.swift */; };
 		729DCE161E37FBB000218A62 /* JarvisServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCE071E37FBB000218A62 /* JarvisServices.swift */; };
-		729DCE171E37FBB000218A62 /* Prod-Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 729DCE081E37FBB000218A62 /* Prod-Config.xcconfig */; };
-		729DCE181E37FBB000218A62 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCE091E37FBB000218A62 /* SecondViewController.swift */; };
-		729DCE1A1E37FBB000218A62 /* VoiceEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCE0B1E37FBB000218A62 /* VoiceEnums.swift */; };
-		729DCE1B1E37FBB000218A62 /* VoicePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCE0C1E37FBB000218A62 /* VoicePlayer.swift */; };
+		D427033922B737FB28424FD0 /* Pods_Jarvis_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D22E1DED68856656E3D1EB /* Pods_Jarvis_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7207DA781E0CFA5C0025164F /* Dev-Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dev-Config.xcconfig"; sourceTree = "<group>"; };
-		723CD2C41E0BA03F00D3E2C8 /* Bakery Jarvis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Bakery Jarvis.app"; path = "Jarvis-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		723CD2C41E0BA03F00D3E2C8 /* Jarvis-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jarvis-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		729DCDFC1E37FBB000218A62 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		729DCDFD1E37FBB000218A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		729DCDFF1E37FBB000218A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		729DCE011E37FBB000218A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		729DCE021E37FBB000218A62 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		729DCE021E37FBB000218A62 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		729DCE031E37FBB000218A62 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		729DCE041E37FBB000218A62 /* JarvisBrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JarvisBrowserController.swift; sourceTree = "<group>"; };
-		729DCE051E37FBB000218A62 /* JarvisController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JarvisController.swift; sourceTree = "<group>"; };
-		729DCE061E37FBB000218A62 /* JarvisMusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JarvisMusicController.swift; sourceTree = "<group>"; };
 		729DCE071E37FBB000218A62 /* JarvisServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JarvisServices.swift; sourceTree = "<group>"; };
-		729DCE081E37FBB000218A62 /* Prod-Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Prod-Config.xcconfig"; path = "Jarvis-ios/Prod-Config.xcconfig"; sourceTree = "<group>"; };
-		729DCE091E37FBB000218A62 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		729DCE0B1E37FBB000218A62 /* VoiceEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceEnums.swift; sourceTree = "<group>"; };
-		729DCE0C1E37FBB000218A62 /* VoicePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoicePlayer.swift; sourceTree = "<group>"; };
+		87D22E1DED68856656E3D1EB /* Pods_Jarvis_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jarvis_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9395BBA1E7D244C3EED8D7 /* Pods-Jarvis-ios.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jarvis-ios.prod.xcconfig"; path = "Pods/Target Support Files/Pods-Jarvis-ios/Pods-Jarvis-ios.prod.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D427033922B737FB28424FD0 /* Pods_Jarvis_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,38 +43,63 @@
 			isa = PBXGroup;
 			children = (
 				729DCDFB1E37FBB000218A62 /* Jarvis-ios */,
-				7207DA781E0CFA5C0025164F /* Dev-Config.xcconfig */,
-				729DCE081E37FBB000218A62 /* Prod-Config.xcconfig */,
 				723CD2C51E0BA03F00D3E2C8 /* Products */,
+				D7D4D81AFA92BC1C7FF2E38D /* Pods */,
+				FFF593405C9DD60AF6B43B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		723CD2C51E0BA03F00D3E2C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				723CD2C41E0BA03F00D3E2C8 /* Bakery Jarvis.app */,
+				723CD2C41E0BA03F00D3E2C8 /* Jarvis-ios.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		726A1E041E9250F800D0B356 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				729DCE071E37FBB000218A62 /* JarvisServices.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		726A1E051E92510200D0B356 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				729DCE021E37FBB000218A62 /* HomeController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		729DCDFB1E37FBB000218A62 /* Jarvis-ios */ = {
 			isa = PBXGroup;
 			children = (
+				726A1E051E92510200D0B356 /* Controllers */,
+				726A1E041E9250F800D0B356 /* Service */,
 				729DCDFC1E37FBB000218A62 /* AppDelegate.swift */,
 				729DCDFD1E37FBB000218A62 /* Assets.xcassets */,
 				729DCDFE1E37FBB000218A62 /* LaunchScreen.storyboard */,
-				729DCE001E37FBB000218A62 /* Main.storyboard */,
-				729DCE021E37FBB000218A62 /* FirstViewController.swift */,
 				729DCE031E37FBB000218A62 /* Info.plist */,
-				729DCE041E37FBB000218A62 /* JarvisBrowserController.swift */,
-				729DCE051E37FBB000218A62 /* JarvisController.swift */,
-				729DCE061E37FBB000218A62 /* JarvisMusicController.swift */,
-				729DCE071E37FBB000218A62 /* JarvisServices.swift */,
-				729DCE091E37FBB000218A62 /* SecondViewController.swift */,
-				729DCE0B1E37FBB000218A62 /* VoiceEnums.swift */,
-				729DCE0C1E37FBB000218A62 /* VoicePlayer.swift */,
 			);
 			path = "Jarvis-ios";
+			sourceTree = "<group>";
+		};
+		D7D4D81AFA92BC1C7FF2E38D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB9395BBA1E7D244C3EED8D7 /* Pods-Jarvis-ios.prod.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFF593405C9DD60AF6B43B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87D22E1DED68856656E3D1EB /* Pods_Jarvis_ios.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 723CD2D81E0BA03F00D3E2C8 /* Build configuration list for PBXNativeTarget "Jarvis-ios" */;
 			buildPhases = (
+				0231E63947AD92A3942C1A35 /* [CP] Check Pods Manifest.lock */,
 				723CD2C01E0BA03F00D3E2C8 /* Sources */,
 				723CD2C11E0BA03F00D3E2C8 /* Frameworks */,
 				723CD2C21E0BA03F00D3E2C8 /* Resources */,
+				F0D0A1A997E0F35524D6E323 /* [CP] Embed Pods Frameworks */,
+				2DDC28CF33370EBFB4E39045 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -108,7 +122,7 @@
 			);
 			name = "Jarvis-ios";
 			productName = "Bakery Jarvis";
-			productReference = 723CD2C41E0BA03F00D3E2C8 /* Bakery Jarvis.app */;
+			productReference = 723CD2C41E0BA03F00D3E2C8 /* Jarvis-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +132,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Manvinder Sodhi";
 				TargetAttributes = {
 					723CD2C31E0BA03F00D3E2C8 = {
@@ -151,9 +165,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				729DCE121E37FBB000218A62 /* Info.plist in Resources */,
-				729DCE101E37FBB000218A62 /* Main.storyboard in Resources */,
-				729DCE171E37FBB000218A62 /* Prod-Config.xcconfig in Resources */,
 				729DCE0E1E37FBB000218A62 /* Assets.xcassets in Resources */,
 				729DCE0F1E37FBB000218A62 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -161,20 +172,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0231E63947AD92A3942C1A35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2DDC28CF33370EBFB4E39045 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jarvis-ios/Pods-Jarvis-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D0A1A997E0F35524D6E323 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jarvis-ios/Pods-Jarvis-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		723CD2C01E0BA03F00D3E2C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				729DCE151E37FBB000218A62 /* JarvisMusicController.swift in Sources */,
-				729DCE1A1E37FBB000218A62 /* VoiceEnums.swift in Sources */,
-				729DCE141E37FBB000218A62 /* JarvisController.swift in Sources */,
 				729DCE161E37FBB000218A62 /* JarvisServices.swift in Sources */,
-				729DCE1B1E37FBB000218A62 /* VoicePlayer.swift in Sources */,
-				729DCE131E37FBB000218A62 /* JarvisBrowserController.swift in Sources */,
-				729DCE181E37FBB000218A62 /* SecondViewController.swift in Sources */,
 				729DCE0D1E37FBB000218A62 /* AppDelegate.swift in Sources */,
-				729DCE111E37FBB000218A62 /* FirstViewController.swift in Sources */,
+				729DCE111E37FBB000218A62 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +240,6 @@
 				729DCDFF1E37FBB000218A62 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		729DCE001E37FBB000218A62 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				729DCE011E37FBB000218A62 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -237,7 +282,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos10.2;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -245,7 +290,9 @@
 		};
 		7207DA761E0CF8960025164F /* Prod */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9395BBA1E7D244C3EED8D7 /* Pods-Jarvis-ios.prod.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5CJ4GC88WR;
 				INFOPLIST_FILE = "Jarvis-ios/Info.plist";
@@ -258,7 +305,6 @@
 		};
 		723CD2D61E0BA03F00D3E2C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7207DA781E0CFA5C0025164F /* Dev-Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -300,7 +346,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos10.2;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -308,7 +354,6 @@
 		};
 		723CD2D71E0BA03F00D3E2C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7207DA781E0CFA5C0025164F /* Dev-Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -343,7 +388,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos10.2;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -351,7 +396,6 @@
 		};
 		723CD2D91E0BA03F00D3E2C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7207DA781E0CFA5C0025164F /* Dev-Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5CJ4GC88WR;
@@ -365,7 +409,6 @@
 		};
 		723CD2DA1E0BA03F00D3E2C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7207DA781E0CFA5C0025164F /* Dev-Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5CJ4GC88WR;

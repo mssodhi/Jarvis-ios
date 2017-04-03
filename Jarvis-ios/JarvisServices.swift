@@ -1,26 +1,48 @@
 import Foundation
+import TRON
+import SwiftyJSON
 
-class JarvisServices {
+let BASE_URL = Bundle.main.infoDictionary!["BASE_URL"] as! String
+
+struct JarvisServices {
     
-    let BASE_URL = Bundle.main.infoDictionary!["BASE_URL"] as! String
+    let tron = TRON(baseURL: BASE_URL)
+    static let sharedInstance = JarvisServices()
     
-    func api(url: String) {
-        let apiUrl = NSURL(string: "http://" + BASE_URL + url)
-        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(url: apiUrl as! URL)
-        let session = URLSession.shared
-        let task = session.dataTask(with: urlRequest as URLRequest) {
-            (data, response, error) -> Void in
-            
-            let httpResponse = response as! HTTPURLResponse
-            let statusCode = httpResponse.statusCode
-            
-            if (statusCode == 200) {
-                NSLog("HTTP 200: ", url)
-             }
+    func statusCheck(completion: @escaping (HandleSuccess?, Error?) -> ()) {
+        let request: APIRequest<HandleSuccess, JSONError> = tron.request("/jarvis/status")
+        
+        request.perform(withSuccess: { (handleSuccess) in
+            completion(handleSuccess, nil)
+        }) { (err) in
+            completion(nil, err)
         }
+    }
+    
+    func handleInput(command: String) {
+        print(command)
+        let request: APIRequest<HandleSuccess, JSONError> = tron.request("/jarvis/speech")
         
-        task.resume()
+        request.method = .post
+        request.parameters = ["input": command]
         
+        request.perform(withSuccess: { (handleSuccess) in
+            print("Success")
+        }) { (err) in
+            print("Error", err)
+        }
+    }
+    
+    class HandleSuccess: JSONDecodable {
+        required init(json: JSON) throws {
+            print("Success")
+        }
+    }
+    
+    class JSONError: JSONDecodable {
+        required init(json: JSON) throws {
+            print("JSON ERROR")
+        }
     }
     
 }

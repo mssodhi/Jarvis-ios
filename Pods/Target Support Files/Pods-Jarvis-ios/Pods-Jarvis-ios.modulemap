@@ -1,0 +1,6 @@
+framework module Pods_Jarvis_ios {
+  umbrella header "Pods-Jarvis-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
