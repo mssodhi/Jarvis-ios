@@ -2,7 +2,9 @@ import UIKit
 import Speech
 import LBTAComponents
 
-let twitterBlue = UIColor(r: 61, g: 167, b: 244)
+let primaryOrange = UIColor(r: 255, g: 99, b: 71)
+let brightLightBlue = UIColor(r: 124, g: 222, b: 240)
+let darkBackgorund = UIColor(r: 34, g: 34, b: 34)
 
 class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
     
@@ -16,7 +18,7 @@ class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
         label.text = "JARKIS"
         label.font = UIFont.systemFont(ofSize: 34, weight: UIFontWeightThin)
         label.textAlignment = .center;
-        
+        label.textColor = .white
         return label
     }()
     
@@ -25,18 +27,19 @@ class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
         label.text = "Loading..."
         label.font = UIFont.systemFont(ofSize: 17)
         label.textAlignment = .center;
-        
+        label.textColor = UIColor(r: 192, g: 192, b: 192)
         return label
     }()
     
     lazy var refreshButton: UIButton = {
         let button = UIButton()
         button.layer.cornerRadius = 5
-        button.layer.borderColor = twitterBlue.cgColor
-        button.layer.borderWidth = 1
+//        button.layer.borderColor = primaryOrange.cgColor
+//        button.layer.borderWidth = 1
+        
         button.setTitle("Refresh", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        button.setTitleColor(twitterBlue, for: .normal)
+        button.setTitleColor(primaryOrange, for: .normal)
         button.addTarget(self, action: #selector(healthCheck), for: .touchUpInside)
         
         return button
@@ -44,12 +47,15 @@ class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
     
     lazy var speakButton: UIButton = {
         let button = UIButton()
+        button.backgroundColor = primaryOrange
+        
         button.layer.cornerRadius = 5
-        button.layer.borderColor = twitterBlue.cgColor
-        button.layer.borderWidth = 1
+//        button.layer.borderColor = UIColor.white.cgColor
+//        button.layer.borderWidth = 1
+        
         button.setTitle("Speak", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: UIFontWeightThin)
-        button.setTitleColor(twitterBlue, for: .normal)
+        button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(speakTapped), for: .touchUpInside)
         
         return button
@@ -60,8 +66,8 @@ class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
         
         speechRecognizer?.delegate = self
         
-        backgroundColor = .white
-        
+        backgroundColor = darkBackgorund
+
         addSubview(titleLabel)
         addSubview(infoLabel)
         addSubview(refreshButton)
@@ -83,14 +89,15 @@ class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
     }
 
     func speakTapped() {
-        print("Speak tapped")
         if audioEngine.isRunning {
-            UIView.animate(withDuration: 0.4, animations: {
+            UIView.animate(withDuration: 0.3, animations: {
                 self.speakButton.transform = CGAffineTransform.identity.scaledBy(x: 1.3, y: 1.3)
-                self.speakButton.backgroundColor = .white
-                self.speakButton.setTitleColor(twitterBlue, for: .normal)
+
+                self.speakButton.backgroundColor = primaryOrange
+                self.speakButton.setTitleColor(UIColor.white, for: .normal)
+                
             }, completion: { (finish) in
-                UIView.animate(withDuration: 0.6, animations: {
+                UIView.animate(withDuration: 0.3, animations: {
                     self.speakButton.transform = CGAffineTransform.identity
                 })
             })
@@ -100,12 +107,13 @@ class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
             audioEngine.inputNode?.removeTap(onBus: 0)
             speakButton.setTitle("Speak", for: .normal)
         } else {
-            UIView.animate(withDuration: 0.4, animations: {
+            UIView.animate(withDuration: 0.3, animations: {
                 self.speakButton.transform = CGAffineTransform.identity.scaledBy(x: 1.3, y: 1.3)
-                self.speakButton.backgroundColor = twitterBlue
-                self.speakButton.setTitleColor(.white, for: .normal)
+                self.speakButton.backgroundColor = darkBackgorund
+                self.speakButton.setTitleColor(brightLightBlue, for: .normal)
+                
             }, completion: { (finish) in
-                UIView.animate(withDuration: 0.6, animations: {
+                UIView.animate(withDuration: 0.3, animations: {
                     self.speakButton.transform = CGAffineTransform.identity
                 })
             })
@@ -116,7 +124,6 @@ class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
     }
     
     func healthCheck() {
-        print("health check")
         JarvisServices.sharedInstance.statusCheck { (success, err) in
             if err != nil {
                 self.infoLabel.text = "Make sure Jarvis server is up and running."

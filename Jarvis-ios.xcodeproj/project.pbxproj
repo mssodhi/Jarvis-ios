@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		724E18151E931A4F0039B32A /* RandomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724E18141E931A4F0039B32A /* RandomCell.swift */; };
 		726F6BDA1E93051000FC2A28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F6BD91E93051000FC2A28 /* ViewController.swift */; };
 		726F6BE21E93052D00FC2A28 /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F6BDE1E93052D00FC2A28 /* LoginCell.swift */; };
 		729DCE0D1E37FBB000218A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DCDFC1E37FBB000218A62 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		723CD2C41E0BA03F00D3E2C8 /* Jarvis-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jarvis-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		724E18141E931A4F0039B32A /* RandomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomCell.swift; sourceTree = "<group>"; };
 		726F6BD91E93051000FC2A28 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		726F6BDE1E93052D00FC2A28 /* LoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginCell.swift; path = ../../../../Downloads/audible/audible/LoginCell.swift; sourceTree = "<group>"; };
 		729DCDFC1E37FBB000218A62 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				726F6BDE1E93052D00FC2A28 /* LoginCell.swift */,
 				72DFAF281E930BFD0038F5B2 /* HomeCell.swift */,
 				72D5C6D51E92F1510090DFB6 /* HomeCell+speech.swift */,
+				724E18141E931A4F0039B32A /* RandomCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724E18151E931A4F0039B32A /* RandomCell.swift in Sources */,
 				729DCE161E37FBB000218A62 /* JarvisServices.swift in Sources */,
 				729DCE0D1E37FBB000218A62 /* AppDelegate.swift in Sources */,
 				72D5C6D61E92F1510090DFB6 /* HomeCell+speech.swift in Sources */,
