@@ -45,8 +45,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        collectionView.scrollToItem(at: IndexPath(row: 1, section: 0) , at: .centeredHorizontally, animated: false)
-        pageControl.currentPage = 1
+//        collectionView.scrollToItem(at: IndexPath(row: 1, section: 0) , at: .centeredHorizontally, animated: false)
+//        pageControl.currentPage = 1
     }
     
     fileprivate func observeKeyboardNotifications() {

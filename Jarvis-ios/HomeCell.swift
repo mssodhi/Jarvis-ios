@@ -90,14 +90,14 @@ class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
 
     func speakTapped() {
         if audioEngine.isRunning {
-            UIView.animate(withDuration: 0.3, animations: {
+            UIView.animate(withDuration: 0.2, animations: {
                 self.speakButton.transform = CGAffineTransform.identity.scaledBy(x: 1.3, y: 1.3)
 
                 self.speakButton.backgroundColor = primaryOrange
                 self.speakButton.setTitleColor(UIColor.white, for: .normal)
                 
             }, completion: { (finish) in
-                UIView.animate(withDuration: 0.3, animations: {
+                UIView.animate(withDuration: 0.2, animations: {
                     self.speakButton.transform = CGAffineTransform.identity
                 })
             })
@@ -107,13 +107,13 @@ class HomeCell: UICollectionViewCell, SFSpeechRecognizerDelegate {
             audioEngine.inputNode?.removeTap(onBus: 0)
             speakButton.setTitle("Speak", for: .normal)
         } else {
-            UIView.animate(withDuration: 0.3, animations: {
+            UIView.animate(withDuration: 0.2, animations: {
                 self.speakButton.transform = CGAffineTransform.identity.scaledBy(x: 1.3, y: 1.3)
                 self.speakButton.backgroundColor = darkBackgorund
                 self.speakButton.setTitleColor(brightLightBlue, for: .normal)
                 
             }, completion: { (finish) in
-                UIView.animate(withDuration: 0.3, animations: {
+                UIView.animate(withDuration: 0.2, animations: {
                     self.speakButton.transform = CGAffineTransform.identity
                 })
             })

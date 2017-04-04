@@ -5,17 +5,24 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "EF5306987F9FD1B140653998945BEFA706721AFE" : 9223372036854775807,
+    "7D1F66D2CD8094251D7CA465E3EF5A9D1801A6C6" : 9223372036854775807,
     "B8BBF752AA93C967D44421C46145707505283E38" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0C422D95-DC04-4C2A-BF50-4C172E11B252",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "EF5306987F9FD1B140653998945BEFA706721AFE" : "jarvis-ios\/",
+    "7D1F66D2CD8094251D7CA465E3EF5A9D1801A6C6" : "..\/iOS%20LBTA\/TwitterLBTA",
     "B8BBF752AA93C967D44421C46145707505283E38" : "..\/..\/Downloads\/audible"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Jarvis-ios",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Jarvis-ios.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bhlvoong\/twitterlbta.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7D1F66D2CD8094251D7CA465E3EF5A9D1801A6C6"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bhlvoong\/audible.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
